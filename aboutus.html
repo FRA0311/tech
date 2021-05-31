@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- for counter function it is manditoery -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title></title>
+    <style>
+      * {box-sizing: border-box;}
+      
+      .l1 {
+        position: relative;
+      }
+      
+      .i1 {
+        display: block;
+        padding-top: 15px;
+      }
+      
+      .overlay {
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 52%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .l1:hover .overlay {
+        opacity: 1;
+      }
+      </style>
+  </head>
+  <body>
+    <!-- Nav bar-->
+    <nav class="navbar navbar-expand-md bg-secondary navbar-light">
+      <a class="navbar-brand" href="">
+        <i class="fa fa-graduation-cap fa-2x" aria-hidden="true" ></i>
+        <small class="text-warning"style="font-size:16px;">SRINDHI TECHNOLOGIES</small>
+      </a>      
+      <button class="navbar-toggler"  data-target="#abc" data-toggle="collapse">
+        <span class="navbar-toggler-icon bg-gradient"></span>
+    </button>
+    <div class="collapse navbar-collapse ml-auto"   id="abc">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item "> 
+          <a class="nav-link text-white " href="home.html"><i class="fa fa-home " aria-hidden="true"> Home</a></i>
+        </li>
+        <li class="nav-item" >
+            <a class="nav-link text-white" href="aboutus.html"><i class="fa fa-users " aria-hidden="true">AboutUs</a></i>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white"  href="courses.html"><i class="fa fa-graduation-cap" aria-hidden="true">Courses</a></i>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white"  href="images.html"><i class="fa fa-picture-o" aria-hidden="true">Images</a></i>
+    </li>
+        <li class="nav-item">
+            <a class="nav-link text-white"  href="contactus.html"><i class="fa fa-phone " aria-hidden="true">ContactUs</a></i>
+        </li>
+      </ul>
+    </div>
+  </nav><br>
+    <marquee><h3><b>WELCOME TO ABOUTUS</b></h3></marquee><br><br><br>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <img src="p7.png" height="300" width="300" alt="">
+        </div>
+        <div class="col-md"><br><br>
+            <p style="font-size: 20px;"><b>We have 15+ years of work experience.</b></p>
+            <span style="padding-left: 30px;">1. Senior-level candidates
+              List up to 15 years of relevant work experience</span><br>
+              <span style="padding-left: 30px;"> 2. Junior- to mid-level candidates Include job Experience of relevant position and a brief mention of other positions: internships, temporary gigs, freelancing
+          </span><br>
+          <span style="padding-left: 30px;">3.Course will be trained by top industry experts who have passion to train students and help them get job in IT industry.</span><br>
+        </div>
+      </div>
+    </div><br><br>
+
+<!-- counters -->
+
+    <div class="jumbotron">
+      <div class="counter">
+      <div class="container" style="text-align: center;">
+        <div class="row">
+          <div class="col-md" style="padding-left: 60px; padding-top: 20px;">
+            <div class="card w-50 " style="border: 1px solid; border-top-left-radius: 45px ; border-bottom-right-radius: 45px; ">
+            <div class="count" style="color: orange;font-size: 50px;font-weight: bold;">100</div>
+            <p style="font-size: 20px;"><b> no.of companies</b></p>
+          </div>
+          </div>
+
+          <div class="col-md " style="padding-top: 20px; padding-left: 60px;">
+            <div class="card w-50" style="border: 1px solid; border-top-left-radius: 45px ; border-bottom-right-radius: 45px; ">
+            <div class="count" style="color: orange;font-size: 50px;font-weight: bold;">10</div>
+            <p style="font-size: 20px;"><b>No.of courses</b></p>
+          </div>
+          </div>
+
+          <div class="col-md" style="padding-top: 20px; padding-left: 60px;">
+            <div class="card w-50 " style="border: 1px solid; border-top-left-radius: 45px ; border-bottom-right-radius: 45px; ">
+            <div class="count" style="color: orange;font-size: 50px;font-weight: bold;" >900</div>
+            <p style="font-size: 20px;" ><b>students get placed</b></p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+
+  <script>
+      $('.count').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+          duration: 5000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+  });
+  </script>
+
+<!-- container-->
+    <div class="container" >
+      <div class="row">
+        <div class="col-md" style="margin-left:18px; text-align: center;">
+            <div class=" d-flex">
+            <img src="l1.jfif" width="100" height="100" alt="">
+            <p><b>P.ShashiRekha</b><br>She had fifteen years of experiance.<br>She joined in 2015.</p>   
+          </div>
+        </div>
+        <div class="col-md" style="margin-left:20px;text-align: center;" >
+            <div class="d-flex" >
+            <img src="l2.jfif" width="100" height="100" alt="">
+            <p><b>N.Joseph</b><br>He had Twelve years of experiance.<br>He joined in 2018.</p>       
+          </div>
+        </div>
+
+       <div class="col-md" style="margin-left:20px;text-align: center;" >
+            <div class="d-flex" >
+            <img src="l3.jfif" width="100" height="100" alt="">
+            <p><b>N.Jhon</b><br>He had fifteen years of experiance.<br>He joined in 2010.</p>       
+          </div>
+        </div>
+      </div>
+    </div><br>
+    <div>
+      
+<!-- image overlay-->
+
+<div class="l1 container">
+  <div class="row">
+    <div class="col">
+      <img src="l4.jfif" class="i1" alt="" height="200" width="200"><div class="overlay">john</div>
+    </div>
+    <div class="col">
+      <img src="l5.jfif" class="i1" alt="" height="200" width="200" ><div class="overlay">komali</div>
+    </div>
+    <div class="col">
+      <img src="l6.jfif" class="i1" alt="" height="200" width="200"><div class="overlay">janu</div>
+    </div>
+    <div class="col">
+      <img src="l7.jfif" class="i1" alt="" height="200" width="200"><div class="overlay">boby</div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+      
+  
+
+
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
