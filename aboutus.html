@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+         <!-- for counters -->
+   
+         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-secondary navbar-light">
+        <a class="navbar-brand" href="">
+          <i class="fa fa-graduation-cap fa-2x" aria-hidden="true" ></i>
+          <small class="text-warning"style="font-size:16px;">SRINDHI TECHNOLOGIES</small>
+        </a>      
+        <button class="navbar-toggler"  data-target="#abc" data-toggle="collapse">
+          <span class="navbar-toggler-icon bg-gradient"></span>
+      </button>
+      <div class="collapse navbar-collapse ml-auto"   id="abc">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item "> 
+            <a class="nav-link text-white" href="home.html"><i class="fa fa-home " aria-hidden="true"> Home</a></i>
+          </li>
+          <li class="nav-item" >
+              <a class="nav-link text-white" href="aboutus.html"><i class="fa fa-users " aria-hidden="true">AboutUs</a></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white"  href="courses.html"><i class="fa fa-graduation-cap" aria-hidden="true">Courses</a></i>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white"  href="images.html"><i class="fa fa-picture-o" aria-hidden="true">Images</a></i>
+      </li>
+          <li class="nav-item">
+              <a class="nav-link text-white"  href="contactus.html"><i class="fa fa-phone " aria-hidden="true">ContactUs</a></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <marquee><h3>Welcome to the page</h3></marquee><br><br>
+     <!-- for col nd rows -->
+     <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            
+           <h2 class="text-danger"> <p ><b>ABOUT OUR TRAINING INSTITUTION</b></p></h2>
+           <span style="font-family: Arial, Helvetica, sans-serif;">
+            It is established in 2010 and We are provindin free training and Placements to the students.
+            SRINDHI is a youth initiative started by Krishna chaithanya and Triveni Aitha.<br>
+            Srinidhi Technologies is the programming development training organization with an aim to bridge the gap between the demands of the
+             industry and the curriculum of educational institutions.<br>
+
+        With centers across the Globe, the institute is a platform where young minds are given the opportunity to build successful careers.<br>
+            </span>
+          </div>
+          <div class="col-md-6" style="margin-left: 0px;">
+            <img src="p2.png" width="300" height="300">
+          </div>
+        </div>
+      </div><br>
+      <h5 class="animate__animated animate__backInDown" style="color: darkblue;text-align: center;">
+        "SRINIDHI TECHNOLOGIES is a place where businesses find talent and dreams take flight."<br></h5>
+        <br><br>
+           <!-- for counters -->
+   <div class="jumbotron">
+    <div class="container" style="text-align: center;">
+      <h2 class="text-danger"> <p style="text-align: center;" ><b>WHY CHOOSE US?</b></p></h2>
+      <div class="row">
+        <div class="col-md" style="padding-left: 60px; padding-top: 20px;">
+          <div class="card w-50 " style="border: 1px solid; border-top-left-radius: 45px ; border-bottom-right-radius: 45px; ">
+          <div class="count" style="color: orange;font-size: 50px;font-weight: bold;">100</div>
+          <p style="font-size: 20px;"><b> no.of companies</b></p>
+        </div>
+        </div>
+
+        <div class="col-md " style="padding-top: 20px; padding-left: 60px;">
+          <div class="card w-50" style="border: 1px solid; border-top-left-radius: 45px ; border-bottom-right-radius: 45px; ">
+          <div class="count" style="color: orange;font-size: 50px;font-weight: bold;">10</div>
+          <p style="font-size: 20px;"><b>No.of courses</b></p>
+        </div>
+        </div>
+
+        <div class="col-md" style="padding-top: 20px; padding-left: 60px;">
+          <div class="card w-50 " style="border: 1px solid; border-top-left-radius: 45px ; border-bottom-right-radius: 45px; ">
+          <div class="count" style="color: orange;font-size: 50px;font-weight: bold;" >900</div>
+          <p style="font-size: 20px;" ><b>students got placed</b></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 5000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+  });
+  </script>
+
+        <h2 class="text-danger"> <p style="text-align: center;" ><b>OUR SERVICES</b></p></h2>
+        <div class="container" style=" border: none; background:transparent url('ab.jpg') no-repeat center center /cover">
+         
+         <div class="row" >
+           <div class="col-md"><br>
+            <div class="card align-items-center" style="width: 20rem;">
+              <h4 class="card-title"style="color: deeppink;">Professional Training</h4>
+                <img class="card-img-top" src="a1.png" alt="Card image cap" height="250">
+                <div class="card-block text-center">
+                    <p class="card-text">Building knowledge  who receives the necessary training is more able to perform in their job. 
+                       A training program allows you to strengthen those skills that each student needs to improve.
+                        A development program brings all students to a higher level.</p>
+                </div></div><br>
+           </div>
+           <div class="col-md"><br>
+            <div class="card align-items-center" style="width: 20rem;">
+              <h4 class="card-title" style="color: deeppink;">Skill Development</h4>
+                <img class="card-img-top" src="a2.png" alt="Card image cap" height="250">
+                <div class="card-block text-center">
+                    <p class="card-text">Skill development is a process of identifying your skill gap and ensuring you develop these skills.
+                       Your skills determine your ability to execute plans and achieve your goals.
+                        Organizations that encourage skill development have employees are motivated.</p>
+                </div></div><br>
+           </div>
+           <div class="col-md"><br>
+            <div class="card align-items-center" style="width: 20rem;">
+              <h4 class="card-title" style="color: deeppink;">Providing Placements</h4>
+                <img class="card-img-top" src="a3.png" alt="Card image cap" height="250" width="200">
+                <div class="card-block text-center">
+                    <p class="card-text">We are providing no.of Placements to the students.
+                     as well as the employability skills required for real-life work.
+                     It also increases their knowledge of an industry or sector, allowing them to make better informed decisions about future
+                      career choices.</p>
+                </div></div><br>
+           </div>
+         </div>   
+         </div><br><br>
+
+
+  <style>         
+      
+      .l1 {
+        position: relative;
+      }
+      
+      .i1 {
+        display: block;
+        padding-top: 15px;
+      }
+      
+      .overlay {
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 52%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .l1:hover .overlay {
+        opacity: 1;
+      }
+  </style>
+
+<div class="l1 container">
+  <h2 class="text-danger"> <p style="text-align: center;" ><b>OUR TRAINERS</b></p></h2>
+
+  <div class="row">
+    <div class="col">
+      <img src="l4.jfif" class="i1" alt="" height="200" width="200"><div class="overlay">john</div>
+    </div>
+    <div class="col">
+      <img src="l5.jfif" class="i1" alt="" height="200" width="200" ><div class="overlay">komali</div>
+    </div>
+    <div class="col">
+      <img src="l6.jfif" class="i1" alt="" height="200" width="200"><div class="overlay">janu</div>
+    </div>
+    <div class="col">
+      <img src="l7.jfif" class="i1" alt="" height="200" width="200"><div class="overlay">boby</div>
+    </div>
+  </div>
+</div>
+<br><br><br>  
+<style>
+  .footer {
+   
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     color: black;
+    text-align: center;
+     font-size: medium;
+     
+  }
+  
+ul {
+list-style-type: none;
+}
+
+  </style>
+<div class="footer bg-info">
+   
+
+     @ Copyright 2010 by Srinidhi Technologies.<br>
+     <ul><li>
+    <li class="a"> <i class="fa fa-facebook-square " aria-hidden="true"> facebook</i><br></li>
+    <li> <i class="fa fa-google-plus-official " aria-hidden="true">google..</i><br></li>
+    <li> <i class="fa fa-twitter-square" aria-hidden="true">twitter.</i><br></li>
+   <li><i class="fa fa-whatsapp" aria-hidden="true"> whatsapp</i><br>
+  </li></ul>
+</div> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
